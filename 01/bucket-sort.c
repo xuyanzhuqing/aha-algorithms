@@ -1,6 +1,10 @@
 #include <stdio.h>
 
 // 满分 10 分，请输入 5 个成绩, 桶排序
+/*
+  优点: O(n)
+  缺点: 对于离散度高的数据非常浪费空间
+*/
 void bucket_sort (int arr[], int len, int max) {
   int bucket[max];
   int i;
